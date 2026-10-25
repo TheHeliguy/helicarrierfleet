@@ -310,10 +310,16 @@
         /* ===================== MAIN MENU (SPA landing view) ===================== */
         #main-menu {
             width: 100%; max-width: 640px; margin: 0 auto;
-            padding: calc(env(safe-area-inset-top, 0px) + 24px) 12px 24px;
+            padding: env(safe-area-inset-top, 0px) 12px 24px;
             display: flex; flex-direction: column;
-            min-height: 100vh; min-height: 100dvh;   /* lets the footer logo sit at the bottom on tall screens */
             box-sizing: border-box;
+        }
+        /* Company logo (Image1.png) - prominent, centred at the top of the main menu */
+        #main-menu .main-logo {
+            display: block; margin: 40px auto 30px auto;
+            width: 80%; max-width: 250px; height: auto;     /* responsive, keeps aspect ratio */
+            border-radius: 14px;                            /* logo has a white background - soften it on the navy theme */
+            box-shadow: 0 6px 22px rgba(0,0,0,0.35), 0 0 0 1px rgba(255,255,255,0.12);
         }
         #main-menu .section-label {
             font-family: var(--mono); font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase;
@@ -321,7 +327,7 @@
         }
         #main-menu .fleet-list { display: flex; flex-direction: column; gap: 12px; list-style: none; margin: 0; padding: 0; }
         #main-menu .fleet-card {
-            display: flex; align-items: center; gap: 16px; width: 100%; min-height: 76px;
+            display: flex; align-items: center; gap: 16px; width: 100%; min-height: 76px; box-sizing: border-box;
             background: linear-gradient(155deg, var(--panel-bg), #16214f);
             border: 1px solid var(--panel-border); border-radius: 16px; padding: 18px;
             position: relative; overflow: hidden; cursor: pointer;
@@ -345,17 +351,6 @@
             flex: 0 0 auto; margin-left: 4px;
         }
         #main-menu .badge.soon { color: var(--accent-yellow); border-color: rgba(245,158,11,0.35); }
-        #main-menu footer.foot {
-            margin-top: auto; padding-top: 22px; text-align: center; font-family: var(--mono);
-            font-size: 10.5px; color: var(--text-secondary); letter-spacing: 0.05em;
-        }
-        /* Company logo (Image1.png), centred at the bottom */
-        .brand-logo {
-            display: block; margin: 0 auto 20px;
-            width: 100%; max-width: 200px; height: auto;   /* responsive, keeps aspect ratio */
-            border-radius: 12px;                           /* logo has a white background - soften it on the navy theme */
-        }
-
         /* ===================== FLEET CHROME (back bar) ===================== */
         #fleet-chrome { width: 100%; display: flex; flex-direction: column; align-items: center; }
         .back-bar { width: 100%; max-width: min(1040px, 100vw); padding: 10px 12px 0; box-sizing: border-box; }
@@ -374,6 +369,8 @@
 <!-- MAIN MENU (FLEET SELECT SPA VIEW)                             -->
 <!-- ============================================================ -->
 <div id="main-menu">
+
+    <img class="main-logo" src="Image1.png" alt="Heli Carrier Inc." width="606" height="210">
 
     <div class="section-label">Fleet Select</div>
 
@@ -425,10 +422,6 @@
         </div></li>
     </ul>
 
-    <footer class="foot">
-        <img class="brand-logo" src="Image1.png" alt="Heli Carrier Inc." width="606" height="210">
-        <div style="opacity:0.8; margin-bottom:12px;">Fleet Performance &amp; Power Assurance</div>
-    </footer>
 </div>
 
 <!-- ============================================================ -->
