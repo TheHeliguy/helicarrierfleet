@@ -208,7 +208,6 @@
         .as-row span { color: #000; font-weight: bold; font-size: 1.1rem; }
         .as-row input { width: 80px; background: #fff; border: 1px solid #aaa; color: #000; font-size: 1.1rem; border-radius: 0; padding: 4px; text-align: right; }
         .as-row span { min-width: 0; }
-        .as-row span small { display: block; font-size: 0.68rem; font-weight: 600; color: #555; letter-spacing: 0.2px; }
         .as-row input[type="time"] { width: 148px; font-size: 1rem; padding: 4px 6px; }
         .as-row input[type="number"] { -moz-appearance: textfield; }
         
@@ -623,13 +622,13 @@
                 <div class="as-grid">
                     <!-- legacy fields no longer shown; kept hidden because saveDailySummary()/loadDayData() still read them (and this preserves any previously saved values) -->
                     <input type="hidden" id="sum_hobbs"><input type="hidden" id="sum_total_hobbs">
-                    <div class="as-row"><span>Engine Start<small>Başlangıç Saati</small></span><input type="time" id="sum_engine_start" onchange="saveDailySummary()"></div>
-                    <div class="as-row"><span>Takeoff<small>Kalkış Saati</small></span><input type="time" id="sum_takeoff" onchange="saveDailySummary()"></div>
-                    <div class="as-row"><span>Landing<small>İniş Saati</small></span><input type="time" id="sum_landing" onchange="saveDailySummary()"></div>
-                    <div class="as-row"><span>Engine Shutdown<small>Motor Kapatma Saati</small></span><input type="time" id="sum_engine_stop" onchange="saveDailySummary()"></div>
+                    <div class="as-row"><span>Engine Start</span><input type="time" id="sum_engine_start" onchange="saveDailySummary()"></div>
+                    <div class="as-row"><span>Takeoff</span><input type="time" id="sum_takeoff" onchange="saveDailySummary()"></div>
+                    <div class="as-row"><span>Landing</span><input type="time" id="sum_landing" onchange="saveDailySummary()"></div>
+                    <div class="as-row"><span>Engine Shutdown</span><input type="time" id="sum_engine_stop" onchange="saveDailySummary()"></div>
                     <div class="as-row"><span>Flight Time</span><input type="number" id="sum_flight" step="0.1" onchange="saveDailySummary()"></div>
-                    <div class="as-row"><span>Hobbs Start<small>Hobbs Başlangıç</small></span><input type="number" id="sum_hobbs_start" step="0.1" onchange="saveDailySummary()"></div>
-                    <div class="as-row"><span>Hobbs End<small>Hobbs Bitiş</small></span><input type="number" id="sum_hobbs_end" step="0.1" onchange="saveDailySummary()"></div>
+                    <div class="as-row"><span>Hobbs Start</span><input type="number" id="sum_hobbs_start" step="0.1" onchange="saveDailySummary()"></div>
+                    <div class="as-row"><span>Hobbs End</span><input type="number" id="sum_hobbs_end" step="0.1" onchange="saveDailySummary()"></div>
                     <div class="as-row"><span>ELCs</span><input type="number" id="sum_elc" onchange="saveDailySummary()"></div>
                     <div class="as-row"><span>Landings</span><input type="number" id="sum_lnd" onchange="saveDailySummary()"></div>
                 </div>
@@ -932,13 +931,13 @@
                 <div class="as-grid">
                     <!-- legacy fields no longer shown; kept hidden because saveDailySummary()/loadDayData() still read them (and this preserves any previously saved values) -->
                     <input type="hidden" id="sum_hobbs_s61"><input type="hidden" id="sum_total_hobbs_s61">
-                    <div class="as-row"><span>Engine Start<small>Başlangıç Saati</small></span><input type="time" id="sum_engine_start_s61" onchange="saveDailySummary()"></div>
-                    <div class="as-row"><span>Takeoff<small>Kalkış Saati</small></span><input type="time" id="sum_takeoff_s61" onchange="saveDailySummary()"></div>
-                    <div class="as-row"><span>Landing<small>İniş Saati</small></span><input type="time" id="sum_landing_s61" onchange="saveDailySummary()"></div>
-                    <div class="as-row"><span>Engine Shutdown<small>Motor Kapatma Saati</small></span><input type="time" id="sum_engine_stop_s61" onchange="saveDailySummary()"></div>
+                    <div class="as-row"><span>Engine Start</span><input type="time" id="sum_engine_start_s61" onchange="saveDailySummary()"></div>
+                    <div class="as-row"><span>Takeoff</span><input type="time" id="sum_takeoff_s61" onchange="saveDailySummary()"></div>
+                    <div class="as-row"><span>Landing</span><input type="time" id="sum_landing_s61" onchange="saveDailySummary()"></div>
+                    <div class="as-row"><span>Engine Shutdown</span><input type="time" id="sum_engine_stop_s61" onchange="saveDailySummary()"></div>
                     <div class="as-row"><span>Flight Time</span><input type="number" id="sum_flight_s61" step="0.1" onchange="saveDailySummary()"></div>
-                    <div class="as-row"><span>Hobbs Start<small>Hobbs Başlangıç</small></span><input type="number" id="sum_hobbs_start_s61" step="0.1" onchange="saveDailySummary()"></div>
-                    <div class="as-row"><span>Hobbs End<small>Hobbs Bitiş</small></span><input type="number" id="sum_hobbs_end_s61" step="0.1" onchange="saveDailySummary()"></div>
+                    <div class="as-row"><span>Hobbs Start</span><input type="number" id="sum_hobbs_start_s61" step="0.1" onchange="saveDailySummary()"></div>
+                    <div class="as-row"><span>Hobbs End</span><input type="number" id="sum_hobbs_end_s61" step="0.1" onchange="saveDailySummary()"></div>
                     <div class="as-row"><span>ELCs</span><input type="number" id="sum_elc_s61" onchange="saveDailySummary()"></div>
                     <div class="as-row"><span>Landings</span><input type="number" id="sum_lnd_s61" onchange="saveDailySummary()"></div>
                 </div>
@@ -1200,13 +1199,13 @@
                 <div class="as-grid">
                     <!-- legacy fields no longer shown; kept hidden because saveDailySummary()/loadDayData() still read them (and this preserves any previously saved values) -->
                     <input type="hidden" id="sum_hobbs_s332"><input type="hidden" id="sum_total_hobbs_s332">
-                    <div class="as-row"><span>Engine Start<small>Başlangıç Saati</small></span><input type="time" id="sum_engine_start_s332" onchange="saveDailySummary()"></div>
-                    <div class="as-row"><span>Takeoff<small>Kalkış Saati</small></span><input type="time" id="sum_takeoff_s332" onchange="saveDailySummary()"></div>
-                    <div class="as-row"><span>Landing<small>İniş Saati</small></span><input type="time" id="sum_landing_s332" onchange="saveDailySummary()"></div>
-                    <div class="as-row"><span>Engine Shutdown<small>Motor Kapatma Saati</small></span><input type="time" id="sum_engine_stop_s332" onchange="saveDailySummary()"></div>
+                    <div class="as-row"><span>Engine Start</span><input type="time" id="sum_engine_start_s332" onchange="saveDailySummary()"></div>
+                    <div class="as-row"><span>Takeoff</span><input type="time" id="sum_takeoff_s332" onchange="saveDailySummary()"></div>
+                    <div class="as-row"><span>Landing</span><input type="time" id="sum_landing_s332" onchange="saveDailySummary()"></div>
+                    <div class="as-row"><span>Engine Shutdown</span><input type="time" id="sum_engine_stop_s332" onchange="saveDailySummary()"></div>
                     <div class="as-row"><span>Flight Time</span><input type="number" id="sum_flight_s332" step="0.1" onchange="saveDailySummary()"></div>
-                    <div class="as-row"><span>Hobbs Start<small>Hobbs Başlangıç</small></span><input type="number" id="sum_hobbs_start_s332" step="0.1" onchange="saveDailySummary()"></div>
-                    <div class="as-row"><span>Hobbs End<small>Hobbs Bitiş</small></span><input type="number" id="sum_hobbs_end_s332" step="0.1" onchange="saveDailySummary()"></div>
+                    <div class="as-row"><span>Hobbs Start</span><input type="number" id="sum_hobbs_start_s332" step="0.1" onchange="saveDailySummary()"></div>
+                    <div class="as-row"><span>Hobbs End</span><input type="number" id="sum_hobbs_end_s332" step="0.1" onchange="saveDailySummary()"></div>
                     <div class="as-row"><span>ELCs</span><input type="number" id="sum_elc_s332" onchange="saveDailySummary()"></div>
                     <div class="as-row"><span>Landings</span><input type="number" id="sum_lnd_s332" onchange="saveDailySummary()"></div>
                 </div>
@@ -1453,13 +1452,13 @@
                 <div class="as-grid">
                     <!-- legacy fields no longer shown; kept hidden because saveDailySummary()/loadDayData() still read them (and this preserves any previously saved values) -->
                     <input type="hidden" id="sum_hobbs_s332L2"><input type="hidden" id="sum_total_hobbs_s332L2">
-                    <div class="as-row"><span>Engine Start<small>Başlangıç Saati</small></span><input type="time" id="sum_engine_start_s332L2" onchange="saveDailySummary()"></div>
-                    <div class="as-row"><span>Takeoff<small>Kalkış Saati</small></span><input type="time" id="sum_takeoff_s332L2" onchange="saveDailySummary()"></div>
-                    <div class="as-row"><span>Landing<small>İniş Saati</small></span><input type="time" id="sum_landing_s332L2" onchange="saveDailySummary()"></div>
-                    <div class="as-row"><span>Engine Shutdown<small>Motor Kapatma Saati</small></span><input type="time" id="sum_engine_stop_s332L2" onchange="saveDailySummary()"></div>
+                    <div class="as-row"><span>Engine Start</span><input type="time" id="sum_engine_start_s332L2" onchange="saveDailySummary()"></div>
+                    <div class="as-row"><span>Takeoff</span><input type="time" id="sum_takeoff_s332L2" onchange="saveDailySummary()"></div>
+                    <div class="as-row"><span>Landing</span><input type="time" id="sum_landing_s332L2" onchange="saveDailySummary()"></div>
+                    <div class="as-row"><span>Engine Shutdown</span><input type="time" id="sum_engine_stop_s332L2" onchange="saveDailySummary()"></div>
                     <div class="as-row"><span>Flight Time</span><input type="number" id="sum_flight_s332L2" step="0.1" onchange="saveDailySummary()"></div>
-                    <div class="as-row"><span>Hobbs Start<small>Hobbs Başlangıç</small></span><input type="number" id="sum_hobbs_start_s332L2" step="0.1" onchange="saveDailySummary()"></div>
-                    <div class="as-row"><span>Hobbs End<small>Hobbs Bitiş</small></span><input type="number" id="sum_hobbs_end_s332L2" step="0.1" onchange="saveDailySummary()"></div>
+                    <div class="as-row"><span>Hobbs Start</span><input type="number" id="sum_hobbs_start_s332L2" step="0.1" onchange="saveDailySummary()"></div>
+                    <div class="as-row"><span>Hobbs End</span><input type="number" id="sum_hobbs_end_s332L2" step="0.1" onchange="saveDailySummary()"></div>
                     <div class="as-row"><span>ELCs</span><input type="number" id="sum_elc_s332L2" onchange="saveDailySummary()"></div>
                     <div class="as-row"><span>Landings</span><input type="number" id="sum_lnd_s332L2" onchange="saveDailySummary()"></div>
                 </div>
